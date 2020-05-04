@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>柔性连接结构</title>
+		<link href="../bootstrap/css/bootstrap.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="row" style="padding-top: 18px;">
+			<div style="padding-left: 15px;">
+				<a id="Flexiblemenu1" class="btn btn-default" href="SpringStructure.html" target="FlexibleConnectionFrame" role="button" style="width: 214px;height: 35px;font-size: 16px;margin-left: 5px;background-color: #F5F5F5;border: none;">弹簧结构</a>
+				<a id="Flexiblemenu2" class="btn btn-default" href="FlexibleShaftStructure.html" target="FlexibleConnectionFrame" role="button" style="width: 214px;height: 35px;font-size: 16px;margin-left:19.5px;background-color: #F5F5F5;border: none;">软轴结构</a>
+				<a id="Flexiblemenu3" class="btn btn-default" href="BellowsConstruction.html" target="FlexibleConnectionFrame" role="button" style="width: 214px;height: 35px;font-size: 16px;margin-left: 19.5px;background-color: #F5F5F5;border: none;">波纹管形结构</a>
+				<a id="Flexiblemenu4" class="btn btn-default" href="AccordionStructure.html" target="FlexibleConnectionFrame" role="button" style="width: 214px;height: 35px;font-size: 16px;margin-left: 19.5px;background-color: #F5F5F5;border: none;">手风琴结构</a>
+				<div class="row" style="height: 1.5px;width: 946.4px;background-color: orange;margin-left: 0px;margin-top: -25px;"></div>
+			</div>
+			<div class="row" style="margin-top: 28px;">
+				<iframe name="FlexibleConnectionFrame" src="FlexibleConnectionStudy.html" width="935" height="360" scrolling="no" style="margin-left: 30px;border: none;"></iframe>
+			</div>
+		</div>
+	</body>
+		<script src="../js/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$("#Flexiblemenu1").click(function() {
+			$("#Flexiblemenu1").css({
+				"background-color": "#3574CC",
+				"color": "#ffffff"
+			});
+			$("#Flexiblemenu2").css({
+				"background-color": "#f5f5f5",
+				"color": "#000000"
+			});
+			$("#Flexiblemenu3").css({
+				"background-color": "#f5f5f5",
+				"color": "#000000"
+			});
+			$("#Flexiblemenu4").css({
+				"background-color": "#f5f5f5",
+				"color": "#000000"
+			});
+		});
+		$("#Flexiblemenu2").click(function() {
+			$("#Flexiblemenu2").css({
+				"background-color": "#3574CC",
+				"color": "#ffffff"
+			});
+			$("#Flexiblemenu1").css({
+				"background-color": "#f5f5f5",
+				"color": "#000000"
+			});
+			$("#Flexiblemenu3").css({
+				"background-color": "#f5f5f5",
+				"color": "#000000"
+			});
+			$("#Flexiblemenu4").css({
+				"background-color": "#f5f5f5",
+				"color": "#000000"
+			});
+		});
+		$("#Flexiblemenu3").click(function() {
+			$("#Flexiblemenu3").css({
+				"background-color": "#3574CC",
+				"color": "#ffffff"
+			});
+			$("#Flexiblemenu2").css({
+				"background-color": "#f5f5f5",
+				"color": "#000000"
+			});
+			$("#Flexiblemenu1").css({
+				"background-color": "#f5f5f5",
+				"color": "#000000"
+			});
+			$("#Flexiblemenu4").css({
+				"background-color": "#f5f5f5",
+				"color": "#000000"
+			});
+		});
+		$("#Flexiblemenu4").click(function() {
+			$("#Flexiblemenu4").css({
+				"background-color": "#3574CC",
+				"color": "#ffffff"
+			});
+			$("#Flexiblemenu2").css({
+				"background-color": "#f5f5f5",
+				"color": "#000000"
+			});
+			$("#Flexiblemenu3").css({
+				"background-color": "#f5f5f5",
+				"color": "#000000"
+			});
+			$("#Flexiblemenu1").css({
+				"background-color": "#f5f5f5",
+				"color": "#000000"
+			});
+		});
+	</script>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>动连接结构</title>
+		<link href="../bootstrap/css/bootstrap.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="row">
+			<div class="col-md-2">
+				<div class="row" style="margin-left: 5px;margin-top: 15px;padding-left: 21px;">
+					<span style="font-size: 18px;font-family: '黑体';">动连接结构学习</span>
+				</div>
+				<div class="row" style="padding-top: 15px;padding-left: 41px;">
+					<div style="width: 120px;height: 30px;padding-top: 25px;background-color: darkgrey;border-radius: 5px;"></div>
+				</div>
+				<div class="row" style="padding-top: 15px;padding-left: 41px;">
+					<a id="Dynamicmenu1" class="btn btn-default" href="MobileStructure.html" target="DynamicFrame" role="button" style="width: 120px;height: 75px;padding-top: 25px;font-size: 16px;background-color: #F5F5F5;border: none;">移动连接结构</a>
+				</div>
+				<div class="row" style="padding-top: 15px;padding-left: 41px;">
+					<a id="Dynamicmenu2" class="btn btn-default" href="RotationalStructure.html" target="DynamicFrame" role="button" style="width: 120px;height: 75px;padding-top: 25px;font-size: 16px;background-color: #F5F5F5;border: none;">转动连接结构</a>
+				</div>
+				<div class="row" style="padding-top: 15px;padding-left: 41px;">
+					<a id="Dynamicmenu3" class="btn btn-default" href="FlexibleConnectionStructure.html" target="DynamicFrame" role="button" style="width: 120px;height: 75px;padding-top: 25px;font-size: 16px;background-color: #F5F5F5;border: none;">柔性连接结构</a>
+				</div>
+				<div class="row" style="padding-top:15px;padding-left: 41px;">
+					<div style="width: 120px;height: 30px;padding-top: 25px;background-color: darkgrey;border-radius: 5px;"></div>
+				</div>
+				<div style="width: 70px;height: 330px;background-color: orange;margin-left: 50px;margin-top: -330px;position: relative;z-index: -1;"></div>
+			</div>
+			<div class="col-md-10" style="width: 950px;height: 430px;margin-top: 0px;margin-left: -10px;">
+				<iframe name="DynamicFrame" src="DynamicIndex.html" width="935" height="430" scrolling="no" style="margin-left: -15px;border: none;"></iframe>
+			</div>
+			<div style="height: 422px;width: 8px;background-color: orange;margin-top: 8px;margin-left: 1148px;"></div>
+			<div style="height: 1.5px;width: 60px;background-color: orange;margin-top: -402px;margin-left: 1123px;"></div>
+
+		</div>
+	</body>
+	<script src="../js/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$("#Dynamicmenu1").click(function() {
+			$("#Dynamicmenu1").css({
+				"background-color": "#3574CC",
+				"color": "#ffffff"
+			});
+			$("#Dynamicmenu2").css({
+				"background-color": "#f5f5f5",
+				"color": "#000000"
+			});
+			$("#Dynamicmenu3").css({
+				"background-color": "#f5f5f5",
+				"color": "#000000"
+			});
+		});
+		$("#Dynamicmenu2").click(function() {
+			$("#Dynamicmenu2").css({
+				"background-color": "#3574CC",
+				"color": "#ffffff"
+			});
+			$("#Dynamicmenu1").css({
+				"background-color": "#f5f5f5",
+				"color": "#000000"
+			});
+			$("#Dynamicmenu3").css({
+				"background-color": "#f5f5f5",
+				"color": "#000000"
+			});
+		});
+		$("#Dynamicmenu3").click(function() {
+			$("#Dynamicmenu3").css({
+				"background-color": "#3574CC",
+				"color": "#ffffff"
+			});
+			$("#Dynamicmenu2").css({
+				"background-color": "#f5f5f5",
+				"color": "#000000"
+			});
+			$("#Dynamicmenu1").css({
+				"background-color": "#f5f5f5",
+				"color": "#000000"
+			});
+		});
+	</script>
+
+</html>

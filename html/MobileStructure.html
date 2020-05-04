@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>移动连接结构</title>
+		<link href="../bootstrap/css/bootstrap.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="row" style="padding-top: 18px;">
+			<div style="padding-left: 15px;">
+				<a id="Moblilemenu1" class="btn btn-default" href="SlidingRail.html" target="MobileStructureFrame" role="button" style="width: 280px;height: 35px;font-size: 16px;margin-left: 5px;background-color: #F5F5F5;border: none;">滑动轨道</a>
+				<a id="Moblilemenu2" class="btn btn-default" href="InstallationFixation.html" target="MobileStructureFrame" role="button" style="width:280px;height: 35px;font-size: 16px;margin-left: 39px;background-color: #F5F5F5;border: none;">安装固定</a>
+				<a id="Moblilemenu3" class="btn btn-default" href="RelatedStructures.html" target="MobileStructureFrame" role="button" style="width: 280px;height: 35px;font-size: 16px;margin-left: 39px;background-color: #F5F5F5;border: none;">相关结构</a>
+				<div class="row" style="height: 1.5px;width: 946.4px;background-color: orange;margin-left: 0px;margin-top: -25px;"></div>
+			</div>
+			<div class="row" style="margin-top: 28px;">
+				<iframe name="MobileStructureFrame" src="MobileStructureStudy.html" width="935" height="360" scrolling="no" style="margin-left: 30px;border: none;"></iframe>
+			</div>
+		</div>
+	</body>
+		<script src="../js/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$("#Moblilemenu1").click(function() {
+			$("#Moblilemenu1").css({
+				"background-color": "#3574CC",
+				"color": "#ffffff"
+			});
+			$("#Moblilemenu2").css({
+				"background-color": "#f5f5f5",
+				"color": "#000000"
+			});
+			$("#Moblilemenu3").css({
+				"background-color": "#f5f5f5",
+				"color": "#000000"
+			});
+		});
+		$("#Moblilemenu2").click(function() {
+			$("#Moblilemenu2").css({
+				"background-color": "#3574CC",
+				"color": "#ffffff"
+			});
+			$("#Moblilemenu1").css({
+				"background-color": "#f5f5f5",
+				"color": "#000000"
+			});
+			$("#Moblilemenu3").css({
+				"background-color": "#f5f5f5",
+				"color": "#000000"
+			});
+		});
+		$("#Moblilemenu3").click(function() {
+			$("#Moblilemenu3").css({
+				"background-color": "#3574CC",
+				"color": "#ffffff"
+			});
+			$("#Moblilemenu2").css({
+				"background-color": "#f5f5f5",
+				"color": "#000000"
+			});
+			$("#Moblilemenu1").css({
+				"background-color": "#f5f5f5",
+				"color": "#000000"
+			});
+		});
+	</script>
+
+
+</html>

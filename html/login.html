@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link href="../bootstrap/css/bootstrap.css" rel="stylesheet" />
+	</head>
+
+	<body style="background-image: url(../img/34.jpg);background-repeat:no-repeat;background-size: 1600px 750px;background-attachment: fixed;background-size: cover;">
+		<div class="container-fluid">
+			<div class="row" style="text-align: right;padding-top: 15px;margin-right: 5px;">
+				<button onclick="fun()" style="border: none;background-color: #DCDCDC;border-radius: 2px;width: 100px;height: 30px;">切换背景</button>
+			</div>
+			<div class="row" style="padding-left: 70px;padding-top: 45px;">
+				<img src="../img/校徽.png" width="137px" height="111px" />
+				<span style="font-size:40px;font-family:黑体;vertical-align: middle;padding-left: 20px;">产品外观结构与材料工艺实验平台</span>
+			</div>
+			<div class="row" style="padding-top: 110px;padding-right: 140px;">
+				<div class="col-md-8" style="padding-left: 60px;">
+					<!--<video src="../video/转动连接支架.Ogg" width="320px" height="240px" controls="controls"></video>-->
+				</div>
+				<div class="col-md-4" style="background-color:#FFFFFF;width: 372px;height: 287px;border-radius: 5px;">
+					<div class="row" style="text-align: center;padding-top: 15px;">
+						<span style="font-family: 微软雅黑;font-size: 20px;">学生登录</span>
+					</div>
+					<div class="row" style="padding-top: 20px;padding-left: 40px;">
+						<div class="input-group">
+							<span class="input-group-addon" style="background-color: #F5F5F5;" id="basic-addon1">
+						  		<span class="glyphicon glyphicon-user" style="font-size: 20px;color: #737373;" aria-hidden="true"></span>
+							</span>
+							<input id="username" type="text" style="height: 40px;width: 250px;" placeholder=" 学号/手机号/邮箱" aria-describedby="basic-addon1">
+						</div>
+					</div>
+					<div class="row" style="padding-top: 20px;padding-left: 40px;">
+						<div class="input-group">
+							<span class="input-group-addon" id="basic-addon1" style="background-color: #F5F5F5;">
+						  		<span class="glyphicon glyphicon-lock" style="font-size: 20px;color: #737373;"></span>
+							</span>
+							<input id="password" type="password" style="height: 40px;width: 250px;" placeholder=" 密码" aria-describedby="basic-addon1">
+						</div>
+					</div>
+					<div class="row" style="padding-top:5px ;">
+						<div class="col-md-6" style="padding-left: 40px;">
+							<input type="checkbox" aria-label="..." style="vertical-align: top;">
+							<span style="font-size: 10px;vertical-align: middle; ">记住密码</span>
+						</div>
+						<div class="col-md-6" style="padding-left: 95px;">
+							<a href="javascript:void(0);">
+								<span style="font-size: 10px;">忘记密码&gt;&gt;</span>
+							</a>
+						</div>
+					</div>
+					<div class="row" style="padding-left: 40px;padding-top: 5px;">
+						<button id="Login" type="button" class="btn btn-primary" style="height: 40px;width: 296px;">
+							<span style="font-size: 20px;">登录</span>
+						</button>
+					</div>
+					<div class="row" style="text-align: center;	margin-top: 10px;margin-left: 2px;">
+						<span id="Tips" style="color: #FFFFFF;">用户名或密码错误！</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../js/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$("#Login").click(function() {
+			var username = "08201design";
+			var password = "08201";
+			//取id为username用户名输入框的值
+			var un = $("#username").val();
+			//取id为password密码框的值
+			var pwd = $("#password").val();
+
+			function varifyLogin(un, pwd) {
+				if(username == un && password == pwd) {
+					return true;
+				} else {
+					return false;
+				}
+			}
+			var result = varifyLogin(un, pwd);
+			//如果用户名和密码正确进行网页跳转
+			if(result) {
+				window.location.href = "index.html";
+			} else {
+				//提示用户名或密码错误
+				$("#Tips").css("color", "darkred");
+			}
+		});
+		var no = 0;
+
+		var arr = ['../img/背景1.jpg', '../img/背景2.jpg','../img/背景3.jpg','../img/33.jpg','../img/34.jpg'];
+
+		function fun() {
+
+			no %= 5;
+
+			$('body').css('background-image', 'url(' + arr[no] +')');
+			no++;
+
+		}
+	</script>
+
+</html>
